@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -20,10 +21,9 @@ public class Voyage {
     @Column(nullable = false)
     private String destination;
 
-    @OneToMany(mappedBy = "voyage", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Category> categories;
-
     @Column(nullable = false)
     private double prixDeBase;
 
+    @OneToMany(mappedBy = "voyage", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Category> categories = new ArrayList<>();
 }

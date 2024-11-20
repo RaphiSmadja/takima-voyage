@@ -22,14 +22,6 @@ public class Voyageur {
     @Column(nullable = false)
     private String email;
 
-    @ManyToOne
-    @JoinColumn(name = "voyage_id", nullable = false)
-    private Voyage voyage;
-
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private CategoryType category;
-
     private String telephone;
 
     @Column(nullable = false)
@@ -37,4 +29,8 @@ public class Voyageur {
 
     @Column(nullable = false)
     private LocalDate dateReservation;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
+    private Category category;
 }

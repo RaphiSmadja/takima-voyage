@@ -24,7 +24,6 @@ public class VoyageurService {
         Voyage voyage = voyageRepository.findById(voyageId)
                 .orElseThrow(() -> new RuntimeException("Voyage introuvable."));
 
-        voyageur.setVoyage(voyage);
         return voyageurRepository.save(voyageur);
     }
 
