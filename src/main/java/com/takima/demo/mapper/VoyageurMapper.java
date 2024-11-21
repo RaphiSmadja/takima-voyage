@@ -7,13 +7,11 @@ import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
 public interface VoyageurMapper {
-
-    @Mapping(target = "voyageId", source = "voyage.id")
-    @Mapping(target = "categoryId", source = "category.displayName")
+    @Mapping(target = "categoryId", source = "category.id")
+    @Mapping(target = "type", source = "category.type")
+    @Mapping(target = "voyageId", source = "category.voyage.id")
     VoyageurDTO toDTO(Voyageur voyageur);
 
-    @Mapping(target = "voyage", ignore = true)
     @Mapping(target = "category", ignore = true)
-
     Voyageur toEntity(VoyageurDTO voyageurDTO);
 }
