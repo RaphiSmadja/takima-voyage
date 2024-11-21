@@ -1,9 +1,7 @@
-package com.takima.demo.controller;
+package com.takima.demo.unit.controller;
 
+import com.takima.demo.controller.VoyageController;
 import com.takima.demo.dto.VoyageDTO;
-import com.takima.demo.mapper.CategoryMapper;
-import com.takima.demo.mapper.VoyageMapper;
-import com.takima.demo.repository.VoyageRepository;
 import com.takima.demo.service.VoyageService;
 import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.Test;

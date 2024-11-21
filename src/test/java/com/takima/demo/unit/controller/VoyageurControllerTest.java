@@ -1,5 +1,6 @@
-package com.takima.demo.controller;
+package com.takima.demo.unit.controller;
 
+import com.takima.demo.controller.VoyageurController;
 import com.takima.demo.dto.VoyageurDTO;
 import com.takima.demo.model.CategoryType;
 import com.takima.demo.service.VoyageurService;

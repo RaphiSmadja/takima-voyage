@@ -1,4 +1,4 @@
-package com.takima.demo.service;
+package com.takima.demo.unit.service;
 
 import com.takima.demo.dto.CategoryDTO;
 import com.takima.demo.dto.VoyageDTO;
@@ -9,6 +9,7 @@ import com.takima.demo.model.Category;
 import com.takima.demo.model.CategoryType;
 import com.takima.demo.model.Voyage;
 import com.takima.demo.repository.VoyageRepository;
+import com.takima.demo.service.VoyageService;
 import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,4 +1,4 @@
-package com.takima.demo.service;
+package com.takima.demo.unit.service;
 
 import com.takima.demo.dto.VoyageurDTO;
 import com.takima.demo.exception.ResourceNotFoundException;
@@ -8,6 +8,7 @@ import com.takima.demo.model.CategoryType;
 import com.takima.demo.model.Voyageur;
 import com.takima.demo.repository.CategoryRepository;
 import com.takima.demo.repository.VoyageurRepository;
+import com.takima.demo.service.VoyageurService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
